@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Partilhator</name>
+	<creationDate>Agosto 2011</creationDate>
+	<author>José A. Cidre Bardelás</author>
+	<authorEmail>info@joomlaempresa.es</authorEmail>
+	<authorUrl>http://joomlaempresa.es</authorUrl>
+	<copyright>Copyright (C) 2011 Joomla Empresa and José A. Cidre Bardelás</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.8.9</version>
+	<description>DESCRIPTION_DESC</description>
+	<files>
+		<filename plugin="partilha">partilha.php</filename>
+		<filename>partilha_imagens/index.html</filename>
+		<filename>partilha_imagens/jbuzz.png</filename>
+		<filename>partilha_imagens/jchuza.png</filename>
+		<filename>partilha_imagens/jdigg.png</filename>
+		<filename>partilha_imagens/jdomelhor.png</filename>
+		<filename>partilha_imagens/jaupatu_18x18.png</filename>
+		<filename>partilha_imagens/jbuzz_18x18.png</filename>
+		<filename>partilha_imagens/jcabozo_18x18.png</filename>
+		<filename>partilha_imagens/jchuza_18x18.png</filename>
+		<filename>partilha_imagens/jdigg_18x18.png</filename>
+		<filename>partilha_imagens/jdomelhor_18x18.png</filename>
+		<filename>partilha_imagens/jfacebook_18x18.png</filename>
+		<filename>partilha_imagens/jlatafanera_18x18.png</filename>
+		<filename>partilha_imagens/jmeneame_18x18.png</filename>
+		<filename>partilha_imagens/jtuenti_18x18.png</filename>
+		<filename>partilha_imagens/jtwitter_18x18.png</filename>
+		<filename>partilha_imagens/jzabaldu_18x18.png</filename>
+		<filename>partilha_imagens/jaupatu_24x24.png</filename>
+		<filename>partilha_imagens/jbuzz_24x24.png</filename>
+		<filename>partilha_imagens/jchuza_24x24.png</filename>
+		<filename>partilha_imagens/jcabozo_24x24.png</filename>
+		<filename>partilha_imagens/jdigg_24x24.png</filename>
+		<filename>partilha_imagens/jdomelhor_24x24.png</filename>
+		<filename>partilha_imagens/jfacebook_24x24.png</filename>
+		<filename>partilha_imagens/jlatafanera_24x24.png</filename>
+		<filename>partilha_imagens/jmeneame_24x24.png</filename>
+		<filename>partilha_imagens/jtuenti_24x24.png</filename>
+		<filename>partilha_imagens/jtwitter_24x24.png</filename>
+		<filename>partilha_imagens/jzabaldu_24x24.png</filename>
+	</files>
+	<languages>
+		<language tag="gl-ES">gl-ES.plg_content_partilha.ini</language>
+		<language tag="en-GB">en-GB.plg_content_partilha.ini</language>
+		<language tag="es-ES">es-ES.plg_content_partilha.ini</language>
+		<language tag="ca-ES">ca-ES.plg_content_partilha.ini</language>
+		<language tag="pt-BR">pt-BR.plg_content_partilha.ini</language>
+		<language tag="pt-PT">pt-PT.plg_content_partilha.ini</language>
+	</languages>
+	<params>
+		<param type="spacer" default="DISPLAY_TIT" />
+		<param name="excluir_secoes" type="text" default="" label="EXCLUDE_SEC" description="EXCLUDE_SEC_DESC" />
+		<param name="excluir_categorias" type="text" default="" label="EXCLUDE_CAT" description="EXCLUDE_CAT_DESC" />
+		<param name="excluir_artigos" type="text" default="" label="EXCLUDE_ART" description="EXCLUDE_ART_DESC" />
+		<param type="spacer" default="POSITION_TIT" />
+		<param name="posicom" type="list" default="1" label="POSITION" description="POSITION_DESC">
+ 			<option value="topo">TOP_OP</option>
+ 			<option value="pe">BOTTOM_OP</option>
+ 			<option value="esquerda">LEFT_OP</option>
+ 			<option value="direita">RIGHT_OP</option>
+		</param>
+		<param name="margem_topo" type="text" size="4" default="3" label="MARGIN_TOP" description="MARGIN_TOP_DESC" />
+		<param name="margem_pe" type="text" size="4" default="3" label="MARGIN_BOTTOM" description="MARGIN_BOTTOM_DESC" />
+		<param name="margem_esquerda" type="text" size="4" default="3" label="MARGIN_LEFT" description="MARGIN_LEFT_DESC" />
+		<param name="margem_direita" type="text" size="4" default="3" label="MARGIN_RIGHT" description="MARGIN_RIGHT_DESC" />
+		<param name="tamanho_icones" type="list" default="24" label="ICONS_SIZE" description="ICONS_SIZE_DESC">
+ 			<option value="18">18X18</option>
+ 			<option value="24">24X24</option>
+		</param>
+		<param name="alinhamento_icones" type="list" default="left" label="ICONS_ALIGN" description="ICONS_ALIGN_DESC">
+ 			<option value="left">LEFT</option>
+ 			<option value="center">CENTER</option>
+ 			<option value="right">RIGHT</option>
+		</param>
+		<param name="espaco_icones" type="text"  default="5" label="SPACE_BETWEEN_ICONS" description="SPACE_BETWEEN_ICONS_DESC" />
+		<param type="spacer" default="ICONS_TIT" />
+		<param name="ver_chuza" type="list" default="1" label="SHOW_CHUZA" description="SHOW_CHUZA_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_domelhor" type="list" default="1" label="SHOW_DOMELHOR" description="SHOW_DOMELHOR_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_buzz" type="list" default="1" label="SHOW_BUZZ" description="SHOW_BUZZ_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="modo_buzz" type="list" default="0" label="BUZZ_MODE" description="BUZZ_MODE_DESC">
+ 			<option value="1">G_READER</option>
+ 			<option value="0">G_BUZZ</option>
+		</param>
+		<param name="longo_buzz" type="text" default="1500" label="SNIPPET_LIMIT" description="SNIPPET_LIMIT_DESC" />
+		<param name="ver_digg" type="list" default="1" label="SHOW_DIGG" description="SHOW_DIGG_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_facebook" type="list" default="1" label="SHOW_FACEBOOK" description="SHOW_FACEBOOK_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_latafanera" type="list" default="1" label="SHOW_TAFANERA" description="SHOW_TAFANERA_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_zabaldu" type="list" default="1" label="SHOW_ZABALDU" description="SHOW_ZABALDU_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_aupatu" type="list" default="1" label="SHOW_AUPATU" description="SHOW_AUPATU_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="idioma_aupatu" type="list" default="eu" label="AUPATU_LANG" description="AUPATU_LANG_DESC">
+ 			<option value="eu">BASQUE</option>
+ 			<option value="es">SPANISH</option>
+		</param>
+		<param name="ver_tuenti" type="list" default="1" label="SHOW_TUENTI" description="SHOW_TUENTI_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_meneame" type="list" default="1" label="SHOW_MENEAME" description="SHOW_MENEAME_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_twitter" type="list" default="1" label="SHOW_TWITTER" description="SHOW_TWITTER_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="mensagem_twitter" type="text"  default="" label="TWITTER_STATUS_MSG" description="TWITTER_STATUS_MSG_DESC" />
+		<param name="separator" type="list" default=":" label="TWITTER_SEP" description="TWITTER_SEP_DESC">
+			<option value=":"> : </option>
+			<option value="/"> / </option>
+			<option value="|"> | </option>
+			<option value="-"> - </option>
+			<option value="--"> -- </option>
+			<option value=","> , </option>
+		</param>
+		<param name="sitio_longo_twitter" type="text"  default="Web" label="TWITTER_LONG_NAME" description="TWITTER_LONG_NAME_DESC" />
+		<param name="sitio_curto_twitter" type="text"  default="Web" label="TWITTER_SHORT_NAME" description="TWITTER_SHORT_NAME_DESC" />
+		<param name="ver_cabozo" type="list" default="1" label="SHOW_CABOZO" description="SHOW_CABOZO_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_inshare" type="list" default="1" label="SHOW_INSHARE" description="SHOW_INSHARE_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ver_googleplus" type="list" default="1" label="SHOW_GPLUS" description="SHOW_GPLUS_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="local_googleplus" type="text" size="8" default="" label="GPLUS_LOCALE" description="GPLUS_LOCALE_DESC" />
+		<param name="amplo_googleplus" type="text" size="4" default="" label="GPLUS_WIDTH" description="GPLUS_WIDTH_DESC" />
+		<param type="spacer" default="ORDER_TIT" />
+		<param name="ordenar_icones" type="list" default="0" label="ICONS_REORDER" description="ICONS_REORDER_DESC">
+ 			<option value="1">YES</option>
+ 			<option value="0">NO</option>
+		</param>
+		<param name="ordem_icones" type="text" default="1,2,3,4,5,6,7,8,9,10,11,12,13,14" label="ICONS_ORDER" description="ICONS_ORDER_DESC" />
+	</params>
+</install> 
